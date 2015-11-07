@@ -1,9 +1,11 @@
 import 'angular-material/angular-material.css';
 
 import angular from 'angular';
-import ngMaterial from 'angular-material';
+import material from 'angular-material';
+import uirouter from 'angular-ui-router';
 
 import routing from './app.config';
+import home from './modules/home';
 
-angular.module('app', [ngMaterial])
+angular.module('app', [material, uirouter, home])
     .config(routing);
