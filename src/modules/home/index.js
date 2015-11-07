@@ -8,9 +8,8 @@ export default angular.module('app.home', [uirouter])
     .controller('HomeCtrl', HomeCtrl)
     .name;
 
-routes.$inject = ['$stateProvider'];
-
 function routes($stateProvider) {
+    'ngInject';
     $stateProvider
         .state('home', {
             url: '/',

@@ -91,8 +91,10 @@ module.exports = function makeWebpackConfig (options) {
       // Reference: https://github.com/babel/babel-loader
       // Transpile .js files using babel-loader
       // Compiles ES6 and ES7 into ES5 code
+
+
       test: /\.js$/,
-      loader: 'babel?optional[]=runtime',
+      loaders: ['ng-annotate', 'babel?optional[]=runtime'],
       exclude: /node_modules/
     }, {
       // ASSET LOADER
