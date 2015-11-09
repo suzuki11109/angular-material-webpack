@@ -1,12 +1,12 @@
 {
   "name": "angular-material-webpack-workflow",
   "version": "1.0.0",
-  "description": "A workflow for Angular made with Webpack",
+  "description": "A workflow for Angular made with Webpack inspired by angular-webpack-workflow",
   "scripts": {
     "build": "webpack --config webpack.build.js --bail -p",
     "dev": "webpack-dev-server --history-api-fallback --inline --progress",
     "test": "karma start",
-    "test:live": "karma start --auto-watch --no-single-run"
+    "karma": "karma start --auto-watch --no-single-run"
   },
   "repository": {
     "type": "git",
