@@ -1,4 +1,4 @@
-import randomNames from './random.name.svc';
+import randomNames from './randomNames';
 
 let service;
 

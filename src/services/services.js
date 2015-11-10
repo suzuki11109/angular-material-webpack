@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-import randomNames from './random.name.svc';
+import randomNames from './randomNames';
 
 export default angular.module('services', [])
     .service('randomNames', randomNames)
