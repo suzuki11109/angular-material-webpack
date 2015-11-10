@@ -6,8 +6,9 @@ import uirouter from 'angular-ui-router';
 
 import routing from './app.config';
 import services from './services/services';
+import components from './components/components';
 
 import home from './modules/home/home';
 
-angular.module('app', [material, uirouter, home, services])
+angular.module('app', [material, uirouter, home, services, components])
     .config(routing);
